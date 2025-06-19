@@ -28,12 +28,16 @@ class MainActivity : ComponentActivity() {
             Column {
                 Text(text = "Welcome to Musa!")
 
-                Button(onClick = {
+                Button(
+                    onClick = {
+                        val beyonce = Intent(this@MainActivity, MainActivity2::class.java)
+                        startActivity(beyonce)
+
+                    }
+
+                ) {
                     Text(text = "Beyonce")
-
                 }
-
-                ) { }
 
                 }
                 }

@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
@@ -22,14 +23,36 @@ class MainActivity2 : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Column {
-            Button(onClick = {
-                Text(text = "Beyonce")
-            }) { }
-        }
+                Text(text = "Welcome to Mussa!")
+
+                Row {
+                    Button(
+                        onClick = {
+
+                            }
+
+
+                    ) {
+                        Text(text = "song name = sweat dreams")
+                        Text(text = "Rating2 = 5/10")
+                        Text(text = "Comments : Shery not really my taste of music")
+
+                    }
+
+                    }
+                     }
+                }
+
+
+                }
+            }
 
 
 
-        
+
+
+
+
 
 
 
