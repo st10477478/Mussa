@@ -37,10 +37,21 @@ class MainActivity : ComponentActivity() {
 
                 ) {
                     Text(text = "Beyonce")
-                }
+
+
+                    }
 
                 }
+            Button(onClick = {
+                val Lanadelray = Intent(this@MainActivity, M)
+            }
+            ) { }
+
                 }
+
+
+                }
+
 
             }
             }

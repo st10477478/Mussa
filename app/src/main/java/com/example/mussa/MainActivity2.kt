@@ -1,5 +1,6 @@
 package com.example.mussa
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -25,27 +26,36 @@ class MainActivity2 : ComponentActivity() {
             Column {
                 Text(text = "Welcome to Mussa!")
 
-                Row {
-                    Button(
-                        onClick = {
 
-                            }
+                Button(
+                    onClick = {
+                    }
 
 
-                    ) {
+                ) {
+                    Row {
                         Text(text = "song name = sweat dreams")
                         Text(text = "Rating2 = 5/10")
-                        Text(text = "Comments : Shery not really my taste of music")
+                        Text(text = "Comments : Shery best dance song")
 
                     }
 
-                    }
-                     }
-                }
 
+                    Button(onClick = {
+                        val back = Intent(this@MainActivity2, MainActivity::class.java)
+                        startActivity(back)
+
+                    }
+                    ) { Text(text = "back to home screen") }
 
                 }
             }
+        }
+    }}
+
+
+
+
 
 
 
