@@ -38,23 +38,22 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Text(text = "Beyonce")
 
-
-                    }
-
-                }
-            Button(onClick = {
-                val Lanadelray = Intent(this@MainActivity, M)
-            }
-            ) { }
-
                 }
 
-
+                Button(onClick = {
+                    val LanaDelRay = Intent(this@MainActivity, MainActivity3::class.java)
+                    startActivity(LanaDelRay)
                 }
+                ) { }
+            }
+        }
+    }
+}
 
 
-            }
-            }
+
+
+
 
 
 
